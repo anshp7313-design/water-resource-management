@@ -1,0 +1,8 @@
+/* Dark theme variables for AquaTrack */
+
+.root {
+    -fx-font-family: "Segoe UI", "Inter", Arial, sans-serif;
+    -fx-background-color: transparent;
+    -fx-control-inner-background: #0f172a;
+    -fx-text-fill: #e2e8f0;
+}

@@ -1,0 +1,637 @@
+/* ============================================= */
+/* AquaTrack – Glassmorphism Ocean Stylesheet      */
+/* ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+.root {
+    -fx-font-family: "Plus Jakarta Sans", "Aptos", "Segoe UI", sans-serif;
+    -fx-font-size: 14;
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #eef2f7 0%, #e8eef6 100%);
+    
+    /* Primary Colors - Ocean & Sunshine */
+    -color-primary: #06b6d4; /* Vibrant Cyan */
+    -color-primary-dark: #0891b2;
+    -color-success: #10b981; /* Fresh Green */
+    -color-success-bg: rgba(16, 185, 129, 0.2);
+    -color-danger: #f43f5e; /* Rose Red */
+    -color-danger-bg: rgba(244, 63, 94, 0.2);
+    -color-warning: #f59e0b; /* Sunny Yellow */
+    -color-warning-bg: rgba(245, 158, 11, 0.2);
+    
+    /* Surface Colors */
+    -color-bg: #f0fdfa;
+    -color-surface: #ffffff; /* Clean white cards */
+    -color-surface-hover: #f8fafc;
+    -color-border: #ccfbf1; /* Soft mint border */
+    -color-text-primary: #0f172a;
+    -color-text-secondary: #475569;
+    -color-text-muted: #94a3b8;
+}
+
+.app-shell {
+    -fx-background-color: transparent;
+}
+
+.dashboard-shell {
+    -fx-background-color: transparent;
+}
+
+.wizard-shell {
+    -fx-background-color: transparent;
+}
+
+.auth-root {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #06101d 0%, #0b1828 48%, #111d31 100%);
+}
+
+.auth-shell {
+    -fx-background-color: rgba(7, 12, 21, 0.52);
+    -fx-background-radius: 30;
+    -fx-border-color: rgba(148, 163, 184, 0.14);
+    -fx-border-radius: 30;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(2, 6, 23, 0.38), 32, 0, 0, 14);
+}
+
+.auth-story {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, rgba(8, 15, 26, 0.98) 0%, rgba(13, 22, 38, 0.96) 58%, rgba(30, 64, 175, 0.18) 100%);
+    -fx-background-radius: 26;
+    -fx-border-color: rgba(148, 163, 184, 0.12);
+    -fx-border-radius: 26;
+    -fx-border-width: 1;
+}
+
+.auth-story-pill {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-background-radius: 999;
+    -fx-border-color: rgba(255, 255, 255, 0.10);
+    -fx-border-radius: 999;
+    -fx-border-width: 1;
+    -fx-padding: 7 12;
+}
+
+.auth-story-pill-text {
+    -fx-text-fill: #d8e8ff;
+    -fx-font-size: 12;
+    -fx-font-weight: 900;
+    -fx-letter-spacing: 1.0;
+}
+
+.auth-form-card {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, rgba(255, 255, 255, 0.98) 0%, rgba(250, 252, 255, 0.95) 100%);
+    -fx-background-radius: 26;
+    -fx-border-color: rgba(148, 163, 184, 0.16);
+    -fx-border-radius: 26;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(15, 23, 42, 0.18), 24, 0, 0, 12);
+}
+
+.auth-metric {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+    -fx-background-radius: 18;
+    -fx-border-color: rgba(255, 255, 255, 0.10);
+    -fx-border-radius: 18;
+    -fx-border-width: 1;
+}
+
+.auth-metric-title {
+    -fx-text-fill: #9cc4ff;
+    -fx-font-size: 12;
+    -fx-font-weight: 900;
+    -fx-letter-spacing: 1.0;
+}
+
+.auth-metric-value {
+    -fx-text-fill: white;
+    -fx-font-size: 13;
+    -fx-font-weight: 700;
+}
+
+.auth-bullet {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-background-radius: 999;
+    -fx-border-color: rgba(255, 255, 255, 0.10);
+    -fx-border-radius: 999;
+    -fx-border-width: 1;
+    -fx-padding: 7 12;
+}
+
+.auth-bullet-text {
+    -fx-text-fill: #d4e5ff;
+    -fx-font-size: 12;
+    -fx-font-weight: 700;
+}
+
+.auth-support-text {
+    -fx-text-fill: rgba(226, 232, 240, 0.76);
+    -fx-font-size: 12;
+    -fx-font-weight: 600;
+}
+
+.auth-form-note {
+    -fx-text-fill: #64748b;
+    -fx-font-size: 12;
+    -fx-font-weight: 600;
+}
+
+.auth-mode-link {
+    -fx-text-fill: #2563eb;
+    -fx-font-size: 13;
+    -fx-font-weight: 800;
+}
+
+.auth-divider {
+    -fx-background-color: linear-gradient(to right, rgba(148, 163, 184, 0.0), rgba(148, 163, 184, 0.32), rgba(148, 163, 184, 0.0));
+}
+
+/* ---------- Glassmorphism Card ---------- */
+.glass-card {
+    -fx-background-color: rgba(255, 255, 255, 0.72);
+    -fx-background-radius: 28;
+    -fx-border-color: rgba(255, 255, 255, 0.50);
+    -fx-border-width: 1.5;
+    -fx-border-radius: 28;
+    -fx-effect: dropshadow(three-pass-box, rgba(6, 182, 212, 0.10), 40, 0, 0, 16);
+}
+
+.glass-card-left {
+    -fx-background-color: rgba(255, 255, 255, 0.90);
+    -fx-background-radius: 28 0 0 28;
+    -fx-padding: 48;
+}
+
+.glass-card-right {
+    -fx-background-color: rgba(255, 255, 255, 0.40);
+    -fx-background-radius: 0 28 28 0;
+    -fx-padding: 48;
+}
+
+.glass-input {
+    -fx-background-color: rgba(255, 255, 255, 0.86);
+    -fx-background-radius: 14;
+    -fx-border-color: rgba(6, 182, 212, 0.20);
+    -fx-border-width: 1.5;
+    -fx-border-radius: 14;
+    -fx-padding: 14 18;
+    -fx-font-size: 15;
+    -fx-font-weight: 600;
+    -fx-text-fill: #0f172a;
+    -fx-prompt-text-fill: #94a3b8;
+}
+.glass-input:focused {
+    -fx-background-color: rgba(255, 255, 255, 0.98);
+    -fx-border-color: #06b6d4;
+    -fx-effect: dropshadow(three-pass-box, rgba(6, 182, 212, 0.18), 12, 0, 0, 0);
+}
+
+.glass-btn-primary {
+    -fx-background-color: linear-gradient(to right, #06b6d4, #3b82f6);
+    -fx-text-fill: white;
+    -fx-font-weight: 800;
+    -fx-font-size: 15;
+    -fx-background-radius: 14;
+    -fx-padding: 14 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(6, 182, 212, 0.35), 16, 0, 0, 6);
+}
+.glass-btn-primary:hover {
+    -fx-background-color: linear-gradient(to right, #22d3ee, #60a5fa);
+    -fx-effect: dropshadow(three-pass-box, rgba(6, 182, 212, 0.50), 20, 0, 0, 8);
+}
+
+.glass-pill {
+    -fx-background-color: rgba(255, 255, 255, 0.70);
+    -fx-background-radius: 12;
+    -fx-border-color: rgba(6, 182, 212, 0.15);
+    -fx-border-width: 1;
+    -fx-border-radius: 12;
+    -fx-padding: 12 18;
+}
+
+.glass-pill-accent {
+    -fx-background-color: rgba(6, 182, 212, 0.10);
+    -fx-background-radius: 999;
+    -fx-border-color: rgba(6, 182, 212, 0.20);
+    -fx-border-width: 1;
+    -fx-border-radius: 999;
+    -fx-padding: 8 14;
+}
+
+.glass-link {
+    -fx-text-fill: #06b6d4;
+    -fx-font-size: 13;
+    -fx-font-weight: 700;
+    -fx-cursor: hand;
+}
+.glass-link:hover {
+    -fx-text-fill: #0891b2;
+    -fx-underline: true;
+}
+
+.glass-text-muted {
+    -fx-text-fill: #94a3b8;
+    -fx-font-size: 12;
+    -fx-font-weight: 600;
+}
+
+.glass-label {
+    -fx-text-fill: #06b6d4;
+    -fx-font-size: 12;
+    -fx-font-weight: 800;
+    -fx-letter-spacing: 1.5;
+}
+
+/* ---------- Auth Enhancements ---------- */
+.auth-glass-field {
+    -fx-background-color: rgba(255, 255, 255, 0.4);
+    -fx-background-radius: 12;
+    -fx-border-color: rgba(6, 182, 212, 0.2);
+    -fx-border-radius: 12;
+    -fx-border-width: 1.5;
+    -fx-padding: 12 16;
+    -fx-font-size: 14;
+    -fx-text-fill: -color-text-primary;
+    -fx-prompt-text-fill: -color-text-muted;
+}
+
+.auth-glass-field:focused {
+    -fx-background-color: rgba(255, 255, 255, 0.6);
+    -fx-border-color: -color-primary;
+    -fx-effect: dropshadow(three-pass-box, rgba(6, 182, 212, 0.15), 10, 0, 0, 0);
+}
+
+.auth-btn-primary {
+    -fx-background-color: linear-gradient(to right, #06b6d4, #3b82f6);
+    -fx-text-fill: white;
+    -fx-font-weight: 800;
+    -fx-font-size: 15;
+    -fx-background-radius: 12;
+    -fx-padding: 14;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(6, 182, 212, 0.4), 12, 0, 0, 4);
+}
+
+.auth-btn-primary:hover {
+    -fx-background-color: linear-gradient(to right, #22d3ee, #60a5fa);
+    -fx-effect: dropshadow(three-pass-box, rgba(6, 182, 212, 0.6), 18, 0, 0, 6);
+}
+
+.auth-btn-secondary {
+    -fx-background-color: rgba(255, 255, 255, 0.4);
+    -fx-text-fill: -color-primary-dark;
+    -fx-border-color: rgba(6, 182, 212, 0.2);
+    -fx-border-width: 1.5;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-font-size: 13;
+    -fx-font-weight: 700;
+    -fx-padding: 12;
+    -fx-cursor: hand;
+}
+
+.auth-btn-secondary:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.6);
+    -fx-border-color: -color-primary;
+}
+
+.auth-strength-meter {
+    -fx-background-color: rgba(0, 0, 0, 0.05);
+    -fx-background-radius: 999;
+    -fx-min-height: 4;
+    -fx-pref-height: 4;
+    -fx-max-height: 4;
+}
+
+.auth-strength-bar {
+    -fx-background-radius: 999;
+}
+
+.auth-strength-text {
+    -fx-font-size: 12;
+    -fx-font-weight: 700;
+}
+
+.auth-toggle-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: -color-text-muted;
+    -fx-font-size: 14;
+    -fx-cursor: hand;
+    -fx-padding: 0 8 0 0;
+}
+
+.auth-toggle-btn:hover {
+    -fx-text-fill: -color-primary;
+}
+
+/* ---------- Typography ---------- */
+.text-h1 { -fx-font-size: 32; -fx-font-weight: 800; -fx-text-fill: -color-text-primary; }
+.text-h2 { -fx-font-size: 24; -fx-font-weight: 800; -fx-text-fill: -color-text-primary; }
+.text-h3 { -fx-font-size: 20; -fx-font-weight: 700; -fx-text-fill: -color-text-primary; }
+.text-h4 { -fx-font-size: 17; -fx-font-weight: 700; -fx-text-fill: -color-text-primary; }
+.text-body { -fx-font-size: 14; -fx-font-weight: 600; -fx-text-fill: -color-text-secondary; }
+.text-small { -fx-font-size: 13; -fx-font-weight: 600; -fx-text-fill: -color-text-secondary; }
+.text-xs { -fx-font-size: 12; -fx-font-weight: 600; -fx-text-fill: -color-text-muted; }
+.text-label { -fx-font-size: 12; -fx-font-weight: 800; -fx-text-fill: -color-primary; -fx-letter-spacing: 1.0; -fx-text-transform: uppercase; }
+
+/* ---------- Cards & Containers ---------- */
+.card {
+    -fx-background-color: rgba(255, 255, 255, 0.84);
+    -fx-border-color: rgba(255, 255, 255, 0.6);
+    -fx-border-width: 2;
+    -fx-background-radius: 24;
+    -fx-border-radius: 24;
+    -fx-padding: 24;
+    -fx-effect: dropshadow(three-pass-box, rgba(15, 23, 42, 0.08), 24, 0, 0, 12);
+}
+.card-mini {
+    -fx-padding: 16;
+}
+
+/* ---------- Sidebar & Header ---------- */
+.sidebar {
+    -fx-background-color: rgba(255, 255, 255, 0.86);
+    -fx-border-color: rgba(255, 255, 255, 0.65);
+    -fx-border-width: 0 2 0 0;
+}
+.header {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+.account-chip {
+    -fx-background-color: rgba(255, 255, 255, 0.78);
+    -fx-border-color: rgba(148, 163, 184, 0.32);
+    -fx-border-width: 1;
+    -fx-background-radius: 999;
+    -fx-border-radius: 999;
+    -fx-padding: 7 14 7 8;
+    -fx-min-width: 188;
+    -fx-pref-width: 188;
+    -fx-max-width: 188;
+    -fx-min-height: 50;
+    -fx-pref-height: 50;
+    -fx-max-height: 50;
+    -fx-effect: dropshadow(three-pass-box, rgba(15, 23, 42, 0.06), 12, 0, 0, 5);
+}
+.avatar-badge {
+    -fx-background-color: linear-gradient(to bottom right, #0f766e, #06b6d4);
+    -fx-background-radius: 999;
+}
+.avatar-initial {
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+    -fx-font-weight: 900;
+}
+.account-name {
+    -fx-text-fill: -color-text;
+    -fx-font-size: 13;
+    -fx-font-weight: 900;
+}
+.account-meta {
+    -fx-text-fill: -color-text-secondary;
+    -fx-font-size: 10;
+    -fx-font-weight: 700;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+    -fx-font-size: 15;
+    -fx-font-weight: 800;
+    -fx-background-radius: 999;
+    -fx-padding: 12 24;
+    -fx-cursor: hand;
+}
+.btn-primary {
+    -fx-background-color: linear-gradient(to right, #06b6d4, #3b82f6);
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(6, 182, 212, 0.4), 10, 0, 0, 4);
+}
+.btn-primary:hover {
+    -fx-background-color: linear-gradient(to right, #22d3ee, #60a5fa);
+    -fx-effect: dropshadow(three-pass-box, rgba(6, 182, 212, 0.6), 15, 0, 0, 6);
+}
+.btn-outline {
+    -fx-background-color: white;
+    -fx-border-color: -color-primary;
+    -fx-border-width: 2;
+    -fx-border-radius: 999;
+    -fx-text-fill: -color-primary;
+}
+.btn-outline:hover {
+    -fx-background-color: #ecfeff;
+}
+.btn-subtle {
+    -fx-background-color: rgba(255, 255, 255, 0.62);
+    -fx-border-color: rgba(6, 182, 212, 0.58);
+    -fx-border-width: 1.5;
+    -fx-border-radius: 999;
+    -fx-text-fill: #0e7490;
+    -fx-font-size: 13;
+    -fx-padding: 10 18;
+}
+.btn-subtle:hover {
+    -fx-background-color: #ecfeff;
+    -fx-border-color: -color-primary;
+}
+.btn-icon {
+    -fx-background-color: white;
+    -fx-border-color: -color-border;
+    -fx-border-width: 2;
+    -fx-background-radius: 999;
+    -fx-border-radius: 999;
+    -fx-padding: 10 14;
+    -fx-cursor: hand;
+    -fx-text-fill: -color-primary;
+}
+.btn-icon:hover {
+    -fx-background-color: #ecfeff;
+}
+
+/* ---------- Navigation Tabs ---------- */
+.nav-tab {
+    -fx-background-color: transparent;
+    -fx-text-fill: -color-text-secondary;
+    -fx-font-size: 15;
+    -fx-font-weight: 700;
+    -fx-background-radius: 999;
+    -fx-padding: 14 24;
+    -fx-cursor: hand;
+    -fx-alignment: center-left;
+}
+.nav-tab:hover {
+    -fx-background-color: #f1f5f9;
+}
+.nav-tab-active {
+    -fx-background-color: rgba(255, 255, 255, 0.92);
+    -fx-text-fill: -color-primary;
+    -fx-font-weight: 800;
+}
+
+/* ---------- Input Fields ---------- */
+.input-field {
+    -fx-font-size: 15;
+    -fx-font-weight: 600;
+    -fx-padding: 12 16;
+    -fx-background-color: #f8fafc;
+    -fx-border-color: #d1d9e4;
+    -fx-border-width: 2;
+    -fx-border-radius: 16;
+    -fx-background-radius: 16;
+    -fx-text-fill: -color-text-primary;
+    -fx-prompt-text-fill: -color-text-muted;
+}
+.input-field:focused {
+    -fx-background-color: white;
+    -fx-border-color: #2563eb;
+    -fx-effect: dropshadow(three-pass-box, rgba(37, 99, 235, 0.16), 8, 0, 0, 0);
+}
+.combo-box {
+    -fx-font-size: 15;
+    -fx-font-weight: 600;
+    -fx-background-color: rgba(255, 255, 255, 0.86);
+    -fx-border-color: -color-border;
+    -fx-border-width: 2;
+    -fx-border-radius: 16;
+    -fx-background-radius: 16;
+}
+.combo-box .list-cell {
+    -fx-text-fill: -color-text-primary;
+}
+.combo-box-popup .list-view {
+    -fx-background-color: white;
+    -fx-border-color: -color-border;
+    -fx-border-width: 2;
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+}
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #ecfeff;
+    -fx-text-fill: -color-primary;
+}
+.combo-box:focused {
+    -fx-background-color: white;
+    -fx-border-color: -color-primary;
+    -fx-effect: dropshadow(three-pass-box, rgba(6, 182, 212, 0.2), 8, 0, 0, 0);
+}
+
+/* Checkbox and Radio */
+.check-box .box, .radio-button .radio {
+    -fx-background-color: white;
+    -fx-border-color: -color-border;
+    -fx-border-width: 2;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+.check-box:selected .box, .radio-button:selected .radio {
+    -fx-background-color: -color-primary;
+    -fx-border-color: -color-primary;
+}
+.check-box:selected .mark {
+    -fx-background-color: white;
+}
+.radio-button .dot {
+    -fx-background-color: transparent;
+}
+.radio-button:selected .dot {
+    -fx-background-color: white;
+}
+.radio-button .radio {
+    -fx-border-radius: 999;
+    -fx-background-radius: 999;
+}
+
+/* ---------- Badges ---------- */
+.badge-success {
+    -fx-background-color: -color-success-bg;
+    -fx-background-radius: 999;
+    -fx-padding: 6 12;
+}
+.badge-danger {
+    -fx-background-color: -color-danger-bg;
+    -fx-background-radius: 999;
+    -fx-padding: 6 12;
+}
+
+/* ---------- Chart Enhancements ---------- */
+.chart-plot-background { -fx-background-color: transparent; }
+.chart-background      { -fx-background-color: transparent; }
+.chart-horizontal-grid-lines { -fx-stroke: rgba(14, 165, 233, 0.18); -fx-stroke-dash-array: 7 9; -fx-stroke-width: 1.5; }
+.chart-vertical-grid-lines   { -fx-stroke: transparent; }
+.axis           { -fx-tick-label-fill: -color-text-secondary; -fx-font-size: 13; -fx-font-weight: 700; }
+.axis-label     { -fx-text-fill: -color-text-secondary; -fx-font-size: 13; }
+.chart-series-area-line {
+    -fx-stroke: #0284c7;
+    -fx-stroke-width: 2px;
+}
+.chart-series-area-fill {
+    -fx-fill: linear-gradient(to top, rgba(14, 165, 233, 0.04), rgba(45, 212, 191, 0.18));
+}
+.chart-line-symbol {
+    -fx-background-color: white, #0284c7;
+    -fx-background-insets: 0, 2;
+    -fx-background-radius: 999;
+    -fx-padding: 3px;
+}
+.chart-bar {
+    -fx-background-radius: 4 4 0 0;
+    -fx-bar-fill: #0891b2;
+}
+.default-color0.chart-bar {
+    -fx-bar-fill: #0891b2;
+}
+.default-color1.chart-bar {
+    -fx-bar-fill: rgba(59, 130, 246, 0.22);
+}
+.default-color0.chart-line-symbol {
+    -fx-background-color: white, #0284c7;
+}
+.default-color1.chart-line-symbol {
+    -fx-background-color: white, rgba(59, 130, 246, 0.62);
+}
+
+/* ---------- TableView ---------- */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+.table-view .column-header-background {
+    -fx-background-color: rgba(255, 255, 255, 0.88);
+    -fx-background-radius: 16 16 0 0;
+    -fx-border-color: transparent;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 16 20;
+}
+.table-view .column-header .label {
+    -fx-text-fill: -color-text-secondary;
+    -fx-font-size: 13;
+    -fx-font-weight: 800;
+}
+.table-view .filler { -fx-background-color: transparent; -fx-border-color: transparent; }
+.table-row-cell {
+    -fx-background-color: rgba(255, 255, 255, 0.84);
+    -fx-border-color: rgba(226, 232, 240, 0.8);
+    -fx-border-width: 0 0 2 0;
+    -fx-padding: 4 0;
+}
+.table-row-cell:hover { -fx-background-color: #f8fafc; }
+.table-row-cell:empty { -fx-background-color: transparent; -fx-border-color: transparent; }
+.table-row-cell .table-cell {
+    -fx-text-fill: -color-text-primary;
+    -fx-font-size: 14;
+    -fx-font-weight: 600;
+    -fx-padding: 12 20;
+}
+.table-row-cell:selected {
+    -fx-background-color: #ecfeff;
+    -fx-background-insets: 0;
+}
+.table-row-cell:selected .table-cell { -fx-text-fill: -color-primary; -fx-font-weight: 700; }
+
+/* Scrollbars */
+.scroll-bar { -fx-background-color: transparent; }
+.scroll-bar .thumb { -fx-background-color: #cbd5e1; -fx-background-radius: 999; }
+.scroll-bar .increment-button, .scroll-bar .decrement-button { -fx-padding: 0; }

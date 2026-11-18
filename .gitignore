@@ -1,0 +1,49 @@
+# Java / Maven
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# Bundled Maven (too large for GitHub — contributors use their own)
+apache-maven-3.9.15/
+
+# Database files (contain personal data & user credentials)
+data/*.db
+data/*.db-shm
+data/*.db-wal
+data/*.log
+
+# Exported/generated data files
+data/*.csv
+data/*.json
+data/seed_data.py
+
+# Log files
+logs/
+*.log
+
+# IDE / Editor
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+.settings/
+.classpath
+.project
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build output
+out/
+bin/
